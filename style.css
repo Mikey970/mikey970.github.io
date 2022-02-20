@@ -170,7 +170,7 @@ li{
     margin-left: 25px;
     margin-right:25px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
    .maincontainer{
        padding-top: 900px;
        display: flex;
@@ -240,3 +240,73 @@ li{
     margin-left:50px;
 }
   }
+  @media screen and (max-height: 750px) {
+    .maincontainer{
+        padding-top: 900px;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+    }
+    .bottom{
+     font-family: 'Bebas Neue', cursive;
+     margin-top: 900px;
+    width: 100%;
+    border-top: 2px solid rgb(20, 20, 20);
+    border-radius: 15px;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 40px;
+    line-height: 2rem;
+    padding-top: 50px;
+    font-weight: bolder;
+ }
+ 
+    .right-block{
+        width: 90%;
+        justify-content: center;
+        margin-right: 40px;
+    }
+    .heder{
+     font-size: 50px;
+     font-family: 'Bebas Neue', cursive;
+     width: 90%;
+     color: rgb(15, 15, 15);
+     font-weight: bolder;
+     position: absolute;
+     text-align: center;
+    margin-left: 35px;
+     text-align: center;
+    border-bottom:none;
+     
+ }
+ .middle-page{
+     
+     width: 90%;
+      order: 2;
+      background-image: url(img/texture-black.webp);
+      background-color:rgb(20, 20, 20);
+      margin: 15px;
+      border: 5px solid white;
+      border-radius: 10px;
+      padding-bottom: 25px;
+      
+  }
+  .left-block{
+    
+     width: 90%;
+     background-color: rgb(255, 255, 255);
+     margin: 15px;
+     border: 5px solid rgb(17, 17, 17);
+     border-radius: 10px;
+     background-image: url(img/beigetexture.jpeg);
+ }
+ .mobile-main{
+     display: flex;
+     flex-direction: column;
+     
+ }
+ .subtext{
+     text-align: center;
+     margin-left:50px;
+ }
+   }
