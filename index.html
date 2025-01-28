@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Delucia - Cybersecurity Professional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2a9d8f;
+            --secondary: #264653;
+            --accent: #e9c46a;
+        }
+
+        body {
+            background: var(--secondary);
+            color: #fff;
+            font-family: 'Courier New', monospace;
+        }
+
+        .cyber-border {
+            border: 2px solid var(--primary);
+            position: relative;
+            padding: 2rem;
+            margin: 1rem 0;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .cyber-border::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            z-index: -1;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+        }
+
+        .skill-badge {
+            background: var(--primary);
+            color: white;
+            margin: 5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: transform 0.3s;
+        }
+
+        .skill-badge:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .project-card {
+            background: #1a1a1a;
+            border: 1px solid var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .typewriter {
+            border-right: 2px solid var(--primary);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--primary) }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DELUCIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container text-center py-5 mt-5">
+        <div class="cyber-border">
+            <h1 class="typewriter">MICHAEL P DELUCIA</h1>
+            <h3 class="mt-3">Cybersecurity Specialist & Software Engineer</h3>
+            <div class="mt-4">
+                <a href="https://linkedin.com/in/mike-delucia970" class="btn btn-outline-primary mx-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/Mikey970" class="btn btn-outline-primary mx-2"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:michaeldeluciat@gmail.com" class="btn btn-outline-primary mx-2"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container py-5">
+        <div class="cyber-border">
+            <h2><i class="fas fa-user-secret"></i> SUMMARY</h2>
+            <p class="lead">Driven cybersecurity professional with CompTIA Security+ and Google certifications. Expertise in network security, vulnerability assessments, and full-stack development. Committed to creating safer digital environments through innovative security solutions.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="container py-5">
+        <div class="cyber-border">
+            <h2><i class="fas fa-briefcase"></i> EXPERIENCE</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="project-card p-3 mb-4">
+                        <h4>IT Support Specialist</h4>
+                        <h5>Platinum Business Corp</h5>
+                        <ul>
+                            <li>Deployed POS systems to 100+ locations</li>
+                            <li>30% downtime reduction via Nagios/Wireshark</li>
+                            <li>90% first-contact resolution rate</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card p-3 mb-4">
+                        <h4>Internship</h4>
+                        <h5>Generations Beyond</h5>
+                        <ul>
+                            <li>Redesigned client websites with SEO focus</li>
+                            <li>Developed social media strategies</li>
+                            <li>Gained tech environment experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container py-5">
+        <div class="cyber-border">
+            <h2><i class="fas fa-code"></i> PROJECTS</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="project-card p-3 mb-4">
+                        <h4>ALGOKILL</h4>
+                        <p>Chrome extension improving YouTube search results</p>
+                        <a href="https://github.com/Mikey970/Algokill/" class="btn btn-sm btn-primary">View Code</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card p-3 mb-4">
+                        <h4>LinkedIn Clone</h4>
+                        <p>Professional networking platform with Python backend</p>
+                        <a href="https://github.com/Cosmic-Binturongs/linkedfin" class="btn btn-sm btn-primary">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container py-5">
+        <div class="cyber-border">
+            <h2><i class="fas fa-tools"></i> SKILLS</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Technical</h4>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">Network Security</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">SIEM</span>
+                        <span class="skill-badge">React.js</span>
+                        <span class="skill-badge">Incident Response</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Certifications</h4>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge">CompTIA Security+</span>
+                        <span class="skill-badge">Google Cybersecurity</span>
+                        <span class="skill-badge">CompTIA A+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <div class="cyber-border">
+            <h2><i class="fas fa-envelope"></i> CONTACT</h2>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p><i class="fas fa-phone"></i> 631-252-0391</p>
+                    <p><i class="fas fa-map-marker"></i> West Islip, NY</p>
+                </div>
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/mvojnzqw" method="POST">
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" placeholder="Message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80 },
+                color: { value: '#2a9d8f' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
